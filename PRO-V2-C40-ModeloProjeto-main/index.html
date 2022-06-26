@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="en"><head>
+  <script src="libraries/p5.js"></script>
+  <script src="libraries/p5.dom.min.js"></script>
+  <script src="libraries/matter.js"></script>
+  <script src="libraries/p5.play.js"></script>
+
+  <script src="js/form.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/player.js"></script>
+<!--Link game.js e player.js-->
+   
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+<!--Adicione configuração do banco de dados abaixo-->
+
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBz6DmuNJkdTqwCEY_gQ7seuJDNPcCvSc8",
+  authDomain: "fruta1.firebaseapp.com",
+  projectId: "fruta1",
+  storageBucket: "fruta1.appspot.com",
+  messagingSenderId: "676051639107",
+  appId: "1:676051639107:web:55bc6e3f81b7b867d4adf6",
+  measurementId: "G-T86SS35JDX"
+};
+
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+
+</head>
+<body>
+  <script src="sketch.js"></script>
+
+
+
+</body></html>
